@@ -1,0 +1,104 @@
+html, body, div,
+ul, li, p, a,
+header, h1, h2, h3, h4, h5, h6,
+figure, img,
+button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	letter-spacing: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+
+ul, li {
+	list-style: none;
+}
+
+a, a:visited, a:hover {
+    color: white;
+}
+
+body 
+{
+    overflow: hidden;
+    font-family: "Helvetica Neue", "Helvetica", "Segoe UI", sans-serif;
+    color: white;
+}
+
+#gui {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+
+#info {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+
+    &-title {
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0.01em;
+    }
+
+    &-credits {
+        padding-top: 4px;
+        font-size: 12px;
+        font-weight: normal;
+        font-style: italic;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+#dropdown {
+
+    &-items {
+        padding-top: 10px;
+        background-color: transparent;
+
+        .item {
+            color: white;
+            font-size: 14px;
+        }
+
+        .item:hover {
+            background-color:rgba(48, 48, 48, 0.6);
+        }
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    #gui {
+        font-size: 12px;
+    }
+
+    #dropdown {
+        &-items {
+            .item {
+                font-size: 12px;
+            }
+        }
+    }
+
+    #info {
+        &-title {
+            font-size: 12px;
+        }
+    
+        &-credits {
+            font-size: 10px;
+        }
+    }
+
+}
